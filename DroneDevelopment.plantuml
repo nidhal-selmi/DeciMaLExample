@@ -28,6 +28,7 @@ rectangle LA as "Logical Architecture" {
                 rectangle "LogFun_5_1" #LightSalmon
                 rectangle "LogFun_5_3" #LightSalmon
                 rectangle "LogFun_6_2" #LightPink
+                rectangle "LogFun_7" #LightGoldenRodYellow
             }
         rectangle REMOTE as "[L] Remote Control"{
                 rectangle "LogFun_4_1" #LightGreen
