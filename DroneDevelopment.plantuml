@@ -3,7 +3,9 @@
 rectangle LA as "Logical Architecture" {
     rectangle "[L] AIDA" {
         rectangle "[L] Drone" as Drone {
-            rectangle FlightControl as "[L] Flight Control & Monitoring"
+            rectangle FlightControl as "[L] Flight Control & Monitoring" {
+                rectangle "LogFun_1" #lightblue
+            }
             rectangle PL as "[L] Payload"
             rectangle PS as "[L] Propulsion System"
             rectangle STR as "[L] Structure"
@@ -20,7 +22,7 @@ DESK -[hidden]u-> REMOTE
 }
 
 rectangle "Functions" as Functions {
-    rectangle LF1 as "[LogFun_1] Provide direct remote identification information"
+    rectangle LF1 as "[LogFun_1] Provide direct remote identification information" #lightblue
     rectangle LF2 as "[LogFun_2] Manage mission"
     rectangle LF3 as "[LogFun_3] Sense drone state and environment"
     rectangle LF4 as "[LogFun_4] Control drone motion"
@@ -31,8 +33,8 @@ rectangle "Functions" as Functions {
 LF1 -[hidden]d-> LF2
 LF3 -[hidden]d-> LF4
 rectangle HELP as " "
-HELP -[hidden] LA
-HELP -[hidden] Functions
+HELP -[hidden]r-> LA
+HELP -[hidden]r-> Functions
 LA --[hidden]d--> Functions
 Drone -[hidden]l-> OP
 AC -[hidden]l-> Drone
