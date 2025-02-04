@@ -1,6 +1,6 @@
 @startuml
 !pragma useVerticalIf on        
-rectangle "Logical Architecture" {
+rectangle LA as "Logical Architecture" {
     rectangle "[L] AIDA" {
         rectangle "[L] Drone" as Drone {
             rectangle FlightControl as "[L] Flight Control & Monitoring"
@@ -30,9 +30,10 @@ rectangle "Functions" as Functions {
 }
 LF1 -[hidden]d-> LF2
 LF3 -[hidden]d-> LF4
-
-
-"Logical Architecture" --[hidden]u--> Functions
+rectangle HELP as " "
+HELP -[hidden] LA
+HELP -[hidden] Functions
+LA --[hidden]d--> Functions
 Drone -[hidden]l-> OP
 AC -[hidden]l-> Drone
 @enduml
