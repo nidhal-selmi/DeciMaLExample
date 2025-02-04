@@ -6,15 +6,28 @@ rectangle LA as "Logical Architecture" {
             rectangle FlightControl as "[L] Flight Control & Monitoring" {
                 rectangle "LogFun_1" #lightblue
                 rectangle "LogFun_3" #LightSeaGreen
+                rectangle "LogFun_4_4" #LightGreen
+                rectangle "LogFun_4_5" #LightGreen
+                rectangle "LogFun_4_8" #LightGreen
+                rectangle "LogFun_4_9" #LightGreen
             }
             rectangle PL as "[L] Payload"
-            rectangle PS as "[L] Propulsion System"
-            rectangle STR as "[L] Structure"
+            rectangle PS as "[L] Propulsion System"{
+                rectangle "LogFun_4_6" #LightGreen
+            }
+            rectangle STR as "[L] Structure"{
+                rectangle "LogFun_4_10" #LightGreen
+            }
         }
         rectangle DESK as "[L] Control Desk" {
+                rectangle "LogFun_4_7" #LightGreen
                 rectangle "LogFun_2" #LightCyan
             }
-        rectangle REMOTE as "[L] Remote Control"
+        rectangle REMOTE as "[L] Remote Control"{
+                rectangle "LogFun_4_1" #LightGreen
+                rectangle "LogFun_4_2" #LightGreen
+                rectangle "LogFun_4_3" #LightGreen
+            }
     }
 DESK -[hidden]u-> REMOTE
     rectangle OP as "[LA] Drone Operator"
@@ -28,7 +41,7 @@ rectangle "Functions" as Functions {
     rectangle LF1 as "[LogFun_1] Provide direct remote identification information" #lightblue
     rectangle LF2 as "[LogFun_2] Manage mission" #LightCyan
     rectangle LF3 as "[LogFun_3] Sense drone state and environment" #LightSeaGreen
-    rectangle LF4 as "[LogFun_4] Control drone motion"
+    rectangle LF4 as "[LogFun_4] Control drone motion" #LightGreen
     rectangle LF5 as "[LogFun_5] Acquire visual information"
     rectangle LF6 as "[LogFun_6] Detect AIDA failures"
     rectangle LF7 as "[LogFun_7] Analyse acquired visual information"
