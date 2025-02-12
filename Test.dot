@@ -1,0 +1,18 @@
+graph {
+	layout=osage
+		subgraph cluster_0 {
+			label="Functions";
+			subgraph cluster_1 {
+			    label="Function 1";
+				subgraph cluster_3 {
+                    label="nested cluster";}		
+			}
+        subgraph cluster_2 {
+            label="the second function";
+			}
+
+		}
+	3
+	4
+	5
+}

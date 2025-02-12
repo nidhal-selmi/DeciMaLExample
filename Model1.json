@@ -1,0 +1,158 @@
+{
+    "name": null,
+    "parts": [
+        {
+            "type": "Package",
+            "name": "DroneDevelopment",
+            "parts": [
+                {
+                    "type": "Package",
+                    "name": "DroneLogicalArchitecture",
+                    "parts": [
+                        {
+                            "type": "LogicalActor",
+                            "name": "DroneOperator",
+                            "parts": []
+                        },
+                        {
+                            "type": "LogicalActor",
+                            "name": "AirlineDataBase",
+                            "parts": []
+                        },
+                        {
+                            "type": "LogicalActor",
+                            "name": "AirTrafficManagement",
+                            "parts": []
+                        },
+                        {
+                            "type": "LogicalActor",
+                            "name": "DroneEnvironment",
+                            "parts": []
+                        },
+                        {
+                            "type": "LogicalActor",
+                            "name": "Aircraft",
+                            "parts": []
+                        },
+                        {
+                            "type": "LogicalComponent",
+                            "name": "AIDA",
+                            "parts": [
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "Drone",
+                                    "parts": [
+                                        {
+                                            "type": "LogicalComponent",
+                                            "name": "FlightControl",
+                                            "parts": []
+                                        },
+                                        {
+                                            "type": "LogicalComponent",
+                                            "name": "PropulsionSystem",
+                                            "parts": []
+                                        },
+                                        {
+                                            "type": "LogicalComponent",
+                                            "name": "Structure",
+                                            "parts": []
+                                        },
+                                        {
+                                            "type": "LogicalComponent",
+                                            "name": "Payload",
+                                            "parts": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "RemoteControl",
+                                    "parts": []
+                                },
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "ControlDesk",
+                                    "parts": []
+                                }
+                            ]
+                        },
+                        {
+                            "type": "LogicalComponent",
+                            "name": "Drone",
+                            "parts": [
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "PropulsionSystem",
+                                    "parts": []
+                                },
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "ControlSystem",
+                                    "parts": []
+                                },
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "Payload",
+                                    "parts": []
+                                },
+                                {
+                                    "type": "LogicalComponent",
+                                    "name": "Structure",
+                                    "parts": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Package",
+                    "name": "DroneFunctions",
+                    "parts": [
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_1",
+                            "parts": [],
+                            "description": "Provide direct remote identification information"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_2",
+                            "parts": [],
+                            "description": "Manage mission"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_3",
+                            "parts": [],
+                            "description": "Sense drone state and environment"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_4",
+                            "parts": [],
+                            "description": "Control drone motion"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_5",
+                            "parts": [],
+                            "description": "Acquire visual information"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_6",
+                            "parts": [],
+                            "description": "Detect AIDA failures"
+                        },
+                        {
+                            "type": "LogicalFunction",
+                            "name": "LogFun_7",
+                            "parts": [],
+                            "description": "Analyse acquired visual information"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

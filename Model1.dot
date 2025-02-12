@@ -1,0 +1,170 @@
+digraph G {
+    graph [layout=osage, splines=ortho, rankdir=TB, compound=true, size="8,4!", ratio=0.5, stylesheet="mystyle.css"];
+    node [fontname="Helvetica", fontsize=10];
+
+    subgraph cluster_id1 {
+        label = "DroneDevelopment";
+        id2 [shape=none, label=""];
+        subgraph cluster_id3 {
+            label = "DroneLogicalArchitecture";
+            id4 [shape=none, label=""];
+            subgraph cluster_id5 {
+                id6 [shape=none, style=filled, fillcolor=lightblue, fixedsize=true, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="40" ALIGN="CENTER">DroneOperator</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id7 {
+                id8 [shape=none, style=filled, fillcolor=lightblue, fixedsize=true, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="40" ALIGN="CENTER">AirlineDataBase</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id9 {
+                id10 [shape=none, style=filled, fillcolor=lightblue, fixedsize=true, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="40" ALIGN="CENTER">AirTrafficManagement</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id11 {
+                id12 [shape=none, style=filled, fillcolor=lightblue, fixedsize=true, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="40" ALIGN="CENTER">DroneEnvironment</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id13 {
+                id14 [shape=none, style=filled, fillcolor=lightblue, fixedsize=true, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="40" ALIGN="CENTER">Aircraft</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id15 {
+                label = "AIDA";
+                style=filled;
+                fillcolor=lightblue;
+                margin=10;
+                id16 [shape=none, label=""];
+                subgraph cluster_id17 {
+                    label = "Drone";
+                    style=filled;
+                    fillcolor=lightblue;
+                    margin=10;
+                    id18 [shape=none, label=""];
+                    subgraph cluster_id19 {
+                        id20 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">FlightControl</TD></TR>
+</TABLE>>];
+                    }
+                    subgraph cluster_id21 {
+                        id22 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">PropulsionSystem</TD></TR>
+</TABLE>>];
+                    }
+                    subgraph cluster_id23 {
+                        id24 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">Structure</TD></TR>
+</TABLE>>];
+                    }
+                    subgraph cluster_id25 {
+                        id26 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">Payload</TD></TR>
+</TABLE>>];
+                    }
+                }
+                subgraph cluster_id27 {
+                    id28 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">RemoteControl</TD></TR>
+</TABLE>>];
+                }
+                subgraph cluster_id29 {
+                    id30 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">ControlDesk</TD></TR>
+</TABLE>>];
+                }
+            }
+            subgraph cluster_id31 {
+                label = "Drone";
+                style=filled;
+                fillcolor=lightblue;
+                margin=10;
+                id32 [shape=none, label=""];
+                subgraph cluster_id33 {
+                    id34 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">PropulsionSystem</TD></TR>
+</TABLE>>];
+                }
+                subgraph cluster_id35 {
+                    id36 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">ControlSystem</TD></TR>
+</TABLE>>];
+                }
+                subgraph cluster_id37 {
+                    id38 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">Payload</TD></TR>
+</TABLE>>];
+                }
+                subgraph cluster_id39 {
+                    id40 [shape=none, style=filled, fillcolor=lightblue, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="10" ALIGN="CENTER"></TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="150" HEIGHT="40" ALIGN="CENTER">Structure</TD></TR>
+</TABLE>>];
+                }
+            }
+        }
+        subgraph cluster_id41 {
+            label = "DroneFunctions";
+            id42 [shape=none, label=""];
+            subgraph cluster_id43 {
+                id44 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_1</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Provide direct remote identification information</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id45 {
+                id46 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_2</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Manage mission</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id47 {
+                id48 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_3</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Sense drone state and environment</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id49 {
+                id50 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_4</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Control drone motion</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id51 {
+                id52 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_5</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Acquire visual information</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id53 {
+                id54 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_6</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Detect AIDA failures</TD></TR>
+</TABLE>>];
+            }
+            subgraph cluster_id55 {
+                id56 [shape=none, style=filled, fillcolor=lightgreen, label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="2">
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="15" ALIGN="CENTER">LogFun_7</TD></TR>
+  <TR><TD FIXEDSIZE="true" WIDTH="120" HEIGHT="30" ALIGN="CENTER">Analyse acquired visual information</TD></TR>
+</TABLE>>];
+            }
+        }
+    }
+}

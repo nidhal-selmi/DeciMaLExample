@@ -1,0 +1,411 @@
+flowchart TD
+    subgraph DroneDevelopment[DroneDevelopment]
+        subgraph DroneLogicalArchitecture[DroneLogicalArchitecture]
+            DroneOperator[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneOperator</td></tr>
+</table>]
+            AirlineDataBase[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirlineDataBase</td></tr>
+</table>]
+            AirTrafficManagement[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirTrafficManagement</td></tr>
+</table>]
+            DroneEnvironment[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneEnvironment</td></tr>
+</table>]
+            Aircraft[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Aircraft</td></tr>
+</table>]
+            AIDA[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AIDA</td></tr>
+</table>]
+                Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                    FlightControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">FlightControl</td></tr>
+</table>]
+                    PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                    Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+                    Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                RemoteControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">RemoteControl</td></tr>
+</table>]
+                ControlDesk[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlDesk</td></tr>
+</table>]
+            Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                ControlSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlSystem</td></tr>
+</table>]
+                Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+        end
+            DroneOperator[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneOperator</td></tr>
+</table>]
+            AirlineDataBase[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirlineDataBase</td></tr>
+</table>]
+            AirTrafficManagement[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirTrafficManagement</td></tr>
+</table>]
+            DroneEnvironment[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneEnvironment</td></tr>
+</table>]
+            Aircraft[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Aircraft</td></tr>
+</table>]
+            AIDA[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AIDA</td></tr>
+</table>]
+                Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                    FlightControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">FlightControl</td></tr>
+</table>]
+                    PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                    Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+                    Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                RemoteControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">RemoteControl</td></tr>
+</table>]
+                ControlDesk[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlDesk</td></tr>
+</table>]
+            Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                ControlSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlSystem</td></tr>
+</table>]
+                Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+        subgraph DroneFunctions[DroneFunctions]
+            LogFun_1[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_1</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Provide direct remote identification information</td></tr>
+</table>]
+            LogFun_2[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_2</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Manage mission</td></tr>
+</table>]
+            LogFun_3[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_3</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Sense drone state and environment</td></tr>
+</table>]
+            LogFun_4[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_4</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Control drone motion</td></tr>
+</table>]
+            LogFun_5[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_5</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Acquire visual information</td></tr>
+</table>]
+            LogFun_6[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_6</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Detect AIDA failures</td></tr>
+</table>]
+            LogFun_7[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_7</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Analyse acquired visual information</td></tr>
+</table>]
+        end
+            LogFun_1[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_1</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Provide direct remote identification information</td></tr>
+</table>]
+            LogFun_2[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_2</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Manage mission</td></tr>
+</table>]
+            LogFun_3[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_3</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Sense drone state and environment</td></tr>
+</table>]
+            LogFun_4[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_4</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Control drone motion</td></tr>
+</table>]
+            LogFun_5[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_5</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Acquire visual information</td></tr>
+</table>]
+            LogFun_6[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_6</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Detect AIDA failures</td></tr>
+</table>]
+            LogFun_7[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_7</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Analyse acquired visual information</td></tr>
+</table>]
+    end
+        subgraph DroneLogicalArchitecture[DroneLogicalArchitecture]
+            DroneOperator[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneOperator</td></tr>
+</table>]
+            AirlineDataBase[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirlineDataBase</td></tr>
+</table>]
+            AirTrafficManagement[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirTrafficManagement</td></tr>
+</table>]
+            DroneEnvironment[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneEnvironment</td></tr>
+</table>]
+            Aircraft[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Aircraft</td></tr>
+</table>]
+            AIDA[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AIDA</td></tr>
+</table>]
+                Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                    FlightControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">FlightControl</td></tr>
+</table>]
+                    PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                    Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+                    Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                RemoteControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">RemoteControl</td></tr>
+</table>]
+                ControlDesk[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlDesk</td></tr>
+</table>]
+            Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                ControlSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlSystem</td></tr>
+</table>]
+                Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+        end
+            DroneOperator[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneOperator</td></tr>
+</table>]
+            AirlineDataBase[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirlineDataBase</td></tr>
+</table>]
+            AirTrafficManagement[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AirTrafficManagement</td></tr>
+</table>]
+            DroneEnvironment[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">DroneEnvironment</td></tr>
+</table>]
+            Aircraft[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Aircraft</td></tr>
+</table>]
+            AIDA[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">AIDA</td></tr>
+</table>]
+                Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                    FlightControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">FlightControl</td></tr>
+</table>]
+                    PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                    Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+                    Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                RemoteControl[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">RemoteControl</td></tr>
+</table>]
+                ControlDesk[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlDesk</td></tr>
+</table>]
+            Drone[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Drone</td></tr>
+</table>]
+                PropulsionSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">PropulsionSystem</td></tr>
+</table>]
+                ControlSystem[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">ControlSystem</td></tr>
+</table>]
+                Payload[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Payload</td></tr>
+</table>]
+                Structure[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="150" height="10" align="center"></td></tr>
+  <tr><td fixedsize="true" width="150" height="40" align="center">Structure</td></tr>
+</table>]
+        subgraph DroneFunctions[DroneFunctions]
+            LogFun_1[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_1</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Provide direct remote identification information</td></tr>
+</table>]
+            LogFun_2[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_2</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Manage mission</td></tr>
+</table>]
+            LogFun_3[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_3</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Sense drone state and environment</td></tr>
+</table>]
+            LogFun_4[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_4</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Control drone motion</td></tr>
+</table>]
+            LogFun_5[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_5</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Acquire visual information</td></tr>
+</table>]
+            LogFun_6[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_6</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Detect AIDA failures</td></tr>
+</table>]
+            LogFun_7[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_7</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Analyse acquired visual information</td></tr>
+</table>]
+        end
+            LogFun_1[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_1</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Provide direct remote identification information</td></tr>
+</table>]
+            LogFun_2[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_2</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Manage mission</td></tr>
+</table>]
+            LogFun_3[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_3</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Sense drone state and environment</td></tr>
+</table>]
+            LogFun_4[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_4</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Control drone motion</td></tr>
+</table>]
+            LogFun_5[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_5</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Acquire visual information</td></tr>
+</table>]
+            LogFun_6[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_6</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Detect AIDA failures</td></tr>
+</table>]
+            LogFun_7[<table border="1" cellspacing="0" cellpadding="2">
+  <tr><td fixedsize="true" width="120" height="15" align="center">LogFun_7</td></tr>
+  <tr><td fixedsize="true" width="120" height="30" align="center">Analyse acquired visual information</td></tr>
+</table>]

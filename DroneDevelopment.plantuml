@@ -37,6 +37,7 @@ rectangle LA as "Logical Architecture" {
                 rectangle "LogFun_6_3" #LightPink
             }
     }
+    
 DESK -[hidden]u-> REMOTE
     rectangle OP as "[LA] Drone Operator"
     rectangle MGMNT as "[LA] Air Traffic Management & Airport Authorities"
